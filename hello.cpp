@@ -10,7 +10,9 @@
 using namespace std;
 
 int main(){
-	cout << "this is hello." << endl;
+	cout << "this is hello." << endl;	
+	cout << "this is hello2." << endl;
+
 }
 
 
