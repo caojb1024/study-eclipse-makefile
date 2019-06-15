@@ -1,15 +1,19 @@
 #
 # 需要生成的文件
-TARGS +=  bin/hello \
-          bin/world \
-          bin/simple_http_server \
-          bin/simple_http_client
+TARGS +=  bin/simple_http_server \
+          bin/simple_http_client \
+          bin/ace_task_msgblock \
+          bin/ace_task_threadmanager \
+          bin/ace_mul_echo_server \
+          
+          
+          
 # 静态库文件名  -l -lACE		 
 LIBS := ACE           
-# 静态库目录    -L -L/usr/local/ACE/lib 
-LIBPATHS:= /usr/local/ACE/lib              
-# 头文件目录    -I -I/usr/local/ACE/include    
-INCS:= /usr/local/ACE/include
+# 静态库目录    -L -L/home/bingcod/libs/ACE/lib 
+LIBPATHS:= /home/bingcod/libs/ACE/lib              
+# 头文件目录    -I -I/home/bingcod/libs/ACE/include    
+INCS:= /home/bingcod/libs/ACE/include
 # 其他的源代码
 SRCDIR:=              
 
