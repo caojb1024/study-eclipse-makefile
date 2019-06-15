@@ -1,9 +1,6 @@
 #
 # 需要生成的文件
-TARGS +=  bin/hello \
-          bin/world \
-          bin/simple_http_server \
-          bin/simple_http_client
+TARGS +=  bin/ace_socket_base
 # 静态库文件名  -l -lACE		 
 LIBS := ACE           
 # 静态库目录    -L -L/usr/local/ACE/lib 
@@ -15,8 +12,9 @@ SRCDIR:=
 
 all: $(TARGS)
 
-bin/%: %.o
-	g++ -o $(@) $(^) $(addprefix -l,$(LIBS)) $(addprefix -L,$(LIBPATHS))
+
+bin/%: ../../../comm/ace/src/%.o
+	g++ -o ../../../$(@) $(^) $(addprefix -l,$(LIBS)) $(addprefix -L,$(LIBPATHS))
 	@echo ''
 %.o: %.cpp
 	g++ -c -o $(@) $(^) -g -Wall $(addprefix -I,$(INCS))
