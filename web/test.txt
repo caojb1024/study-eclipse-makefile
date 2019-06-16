@@ -1,0 +1,6 @@
+(139705209984832) Producer task opened. 
+(139705209984832) Consumer task opend.
+(139705176758016)Consumer closes down.
+(139705159972608)Consumer closes down.
+(139705168365312)Consumer closes down.
+(139705185150720) Producer closes down.
