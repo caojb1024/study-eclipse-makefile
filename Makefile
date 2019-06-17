@@ -8,6 +8,9 @@ TARGS +=  bin/simple_http_server \
           bin/ace_produce_consumer \
           bin/ace_sap_dgram_echoserver \
           bin/ace_sap_dgram_echosclient \
+          bin/ace_dgram_mcast_send \
+          bin/ace_dgram_mcast_recv \
+          bin/ace_task_thread_pool \
           
           
           
